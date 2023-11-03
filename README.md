@@ -35,12 +35,15 @@ Create a responsive image gallery using React JS with the following features: re
    [] starter project.
    [] setup and finalize css libaries , icons , state-management tools and task breakdown
 1. layout
-   [] Implement layout as per image shown.
-   [] make the layout responsive.(mobile-tab-full)
-   [] create buttons for selection and deletation.(non-funtional).
-   [] visual selection check-box on image.
-   [] feature image should be visuall distinct and should be on the left hand side of the gallary.
-   [] have max width set to 1280px
+
+   - [] Implement layout as per image shown.
+     - header, body
+     - card conponent
+   - [] make the layout responsive.(mobile-tab-full)
+   - [] create buttons for selection and deletation.(non-funtional).
+   - [] visual selection check-box on image.
+   - [] feature image should be visuall distinct and should be on the left hand side of the gallary.
+   - [] have max width set to 1280px
 
 2. Image layer
    [] Think of a image model to facilitate sorting, uploading, DnD, order-reorder and deletation.
