@@ -3,8 +3,8 @@ import HomePage from "@/pages/home.pages";
 
 function App() {
   return (
-    <div className="w-[100wh] h-[100vh] mx-auto bg-blue-50 ">
-      <HomePage />;
+    <div className="bg-blue-50 py-8">
+      <HomePage />
     </div>
   );
 }
