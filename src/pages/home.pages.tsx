@@ -19,11 +19,20 @@ const HomePage = () => {
       setSeletedImages((pervImages) => [...pervImages, imageId]);
     }
   };
+  const handleDeleteImages = () => {
+    setImages((prevImgs) =>
+      prevImgs.filter((img) => !selectedImages.includes(img.id))
+    );
+    setSeletedImages([]);
+  };
+
   return (
     <Container>
       <div className="border-2 rounded-md shadow-md">
         <Header
-          handleDelete={() => {}}
+          handleDelete={() => {
+            handleDeleteImages();
+          }}
           handleToggleAllSelected={() => {}}
           selectedImgCount={selectedImages.length}
         />

@@ -9,8 +9,9 @@ const Header: FC<IHeaderProp> = ({
   const HandleDeleteFiles = () => {
     if (selectedImgCount > 0) {
       handleDelete();
+    } else {
+      alert("no files selected");
     }
-    alert("no files selected");
   };
   return (
     <div className="flex flex-row items-center justify-between h-20 px-6 border-b-2">
