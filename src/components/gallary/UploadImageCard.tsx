@@ -1,8 +1,7 @@
+import { IUploadImageCard } from "@/libs/types";
 import { FC } from "react";
 
-interface IUploadImageCard {
-  handleUpload: () => void;
-}
+
 const UploadImageCard: FC<IUploadImageCard> = () => {
   return (
     <div

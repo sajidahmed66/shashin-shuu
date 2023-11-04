@@ -1,13 +1,8 @@
-import { IImageCollectionData } from "@/libs/types";
+import { ICardProps } from "@/libs/types";
 import { FC } from "react";
 import { twJoin } from "tailwind-merge";
 
-interface ICardProps {
-  index: number;
-  img: IImageCollectionData;
-}
-
-const Card: FC<ICardProps> = ({ img, index }) => {
+const Card: FC<ICardProps> = ({ img, index, toggleChecked, isSelected }) => {
   return (
     <div
       className={twJoin(
@@ -19,13 +14,17 @@ const Card: FC<ICardProps> = ({ img, index }) => {
     >
       <img
         src={img.imgSrc as string}
-        className="object-cover w-full h-full overflow-hidden"
+        className={twJoin(
+          "w-full h-full overflow-hidden",
+          isSelected && "opacity-60"
+        )}
       />
       <div
         className={twJoin(
           "absolute h-6 w-6 bg-white top-7 left-7 justify-center items-center text-lg group-hover:flex",
-          false ? "flex" : "hidden"
+          isSelected ? "flex" : "hidden"
         )}
+        onClick={() => toggleChecked(img.id)}
       >
         <input
           type="checkbox"
