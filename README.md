@@ -36,32 +36,34 @@ Create a responsive image gallery using React JS with the following features: re
    [] setup and finalize css libaries , icons , state-management tools and task breakdown
 1. layout
 
-   - [] Implement layout as per image shown.
+   - [x] Implement layout as per image shown.
      - header, body
      - card conponent
-   - [] make the layout responsive.(mobile-tab-full)
-   - [] create buttons for selection and deletation.(non-funtional).
-   - [] visual selection check-box on image.
-   - [] feature image should be visuall distinct and should be on the left hand side of the gallary.
-   - [] have max width set to 1280px
+   - [x] make the layout responsive.(mobile-tab-full)
+   - [x] create buttons for selection and deletation.(non-funtional).
+   - [x] visual selection check-box on image.
+   - [x] feature image should be visuall distinct and should be on the left hand side of the gallary.
+   - [x] have max width set to 1280px
 
 2. Image layer
-   [] Think of a image model to facilitate sorting, uploading, DnD, order-reorder and deletation.
-   [] should i have a Bass for image uploading and storing ? it is better to do it all from FE.
-   [] Upload image.
-   [] upload multiple image.
-   [] selected images to delete,
-   [] make a fallback image to be set to featured image if feature image is deleted.
+
+   - [ ] Think of a image model to facilitate sorting, uploading, DnD, order-reorder and deletation.
+   - [ ] should i have a Bass for image uploading and storing ? it is better to do it all from FE.
+   - [ ] Upload image.
+   - [ ] upload multiple image.
+   - [ ] selected images to delete,
+   - [ ] make a fallback image to be set to featured image if feature image is deleted.
 
 3. sorting with dnd/intuative method
-   [ ] libary or bear-bone -- decide
-   [ ] crate the dnd div, (main image container )
-   [ ] snap to grid while droping to the position/targeted div or order.
-   [ ] update api/state accordng to the new order.
-   [ ] if api update to the new order has been failed show error message and fallback to previous order.
-   [ ] if there is no api and all are handelled lacally find a way to implement the same corner-case mentioned above.
 
-   TBA
+   - [ ] libary or bear-bone -- decide
+   - [ ] crate the dnd div, (main image container )
+   - [ ] snap to grid while droping to the position/targeted div or order.
+   - [ ] update api/state accordng to the new order.
+   - [ ] if api update to the new order has been failed show error message and fallback to previous order.
+   - [ ] if there is no api and all are handelled lacally find a way to implement the same corner-case mentioned above.
+
+TBA
 
 4. user experience
 
