@@ -26,6 +26,15 @@ const HomePage = () => {
     setSeletedImages([]);
   };
 
+  const handleUploadImage = (imgFile: File) => {
+    setImages((prevCollection) => [
+      ...prevCollection,
+      {
+        id: images.length + 1,
+        imgSrc: imgFile,
+      },
+    ]);
+  };
   return (
     <Container>
       <div className="border-2 rounded-md shadow-md">
@@ -45,7 +54,7 @@ const HomePage = () => {
               isSelected={selectedImages.includes(img.id)}
             />
           ))}
-          <UploadImageCard handleUpload={() => {}} />
+          <UploadImageCard handleUpload={handleUploadImage} />
         </div>
       </div>
     </Container>

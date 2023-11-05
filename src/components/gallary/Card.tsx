@@ -13,7 +13,11 @@ const Card: FC<ICardProps> = ({ img, index, toggleChecked, isSelected }) => {
       draggable={true}
     >
       <img
-        src={img.imgSrc as string}
+        src={
+          typeof img.imgSrc === "string"
+            ? img.imgSrc
+            : URL.createObjectURL(img.imgSrc)
+        }
         className={twJoin(
           "w-full h-full overflow-hidden",
           isSelected && "opacity-60"

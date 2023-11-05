@@ -20,7 +20,7 @@ export interface ICardProps {
 }
 
 export interface IUploadImageCard {
-  handleUpload: () => void;
+  handleUpload: (imgFile: File) => void;
 }
 
 export interface IContainerProp {
