@@ -17,6 +17,11 @@ export interface ICardProps {
   img: IImageCollectionData;
   toggleChecked: (id: number) => void;
   isSelected: boolean;
+  dropImage: (index: number) => void;
+  dragImage: (index: number) => void;
+  dragOverImage: (index: number) => void;
+  handleImageToIndexDrop: (index: number | null) => void;
+  newDroppableIndex: number | null;
 }
 
 export interface IUploadImageCard {
